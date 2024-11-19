@@ -2,7 +2,7 @@
 
 Fichier d'origine disponible ici [app.js](https://codeberg.org/xormetric/bblock/src/branch/main/src/app.js)
 
-## 1. Stockage d'Informations Sensibles dans `localStorage`
+## 1. Stockage d'Informations Sensibles dans `localStorage` 
 
 ### Problème
 Le code stocke des informations sensibles telles que le nom d'utilisateur·ice et le mot de passe dans `localStorage` en clair :
