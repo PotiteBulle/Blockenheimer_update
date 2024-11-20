@@ -51,7 +51,7 @@ function renderUnblockAllButton() {
 Les appels asynchrones (ex. : API via `agent.rpc.get`) ne sont pas protégés contre les erreurs. Une erreur peut entraîner un crash de l'application.
 
 ### Solution :
-Ajouter des blocs `try...catch` autour des appels asynchrones :
+- Ajouter des blocs `try...catch` autour des appels asynchrones :
 ```javascript
 async function unblockSelf() {
     try {
@@ -81,7 +81,7 @@ async function unblockSelf() {
 L'utilisation de `setTimeout` pour gérer les délais est peu fiable et introduit des comportements imprévisibles ou des crash.
 
 ### Solution :
-Utiliser des événements ou des promesses correctement gérées pour orchestrer les flux:
+- Utiliser des événements ou des promesses correctement gérées pour orchestrer les flux:
 ```javascript
 async function unblockAll() {
     main.replace(centerText("Récupération des blocages..."));
