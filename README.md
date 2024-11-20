@@ -1,5 +1,5 @@
 # Blockenheimer_update
-[Blockenheimer](https://codeberg.org/xormetric/bblock), version corrigée, vu les erreurs de sécurité des utilisateur·ices non prises en compte, ainsi que l'impossibilité de joindre la personne qui a créé le code.
+[Blockenheimer](https://codeberg.org/xormetric/bblock), a version actuelle de l'application ne garantit pas la sécurité des données qui transitent, y compris celles utilisées pour la connexion indépendant de Bluesky et propre à l'application
 
 
 Ce document présente les problèmes de sécurité identifiés dans le code fourni par l'utilisateurice [xormetric](https://codeberg.org/xormetric) et propose des solutions pour rendre le code plus sécurisé. Le code contient plusieurs vulnérabilités courantes qui peuvent compromettre la confidentialité et la sécurité des utilisateur·ices, mais aussi des problèmes de gestion mal pris en charge ainsi que des problèmes d'optimisation pouvant créer des incidents. Voici donc une version plus à jours.
