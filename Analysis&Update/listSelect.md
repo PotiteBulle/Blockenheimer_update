@@ -2,7 +2,7 @@
 
 Fichier d'origine disponible ici [listSelect.js](https://codeberg.org/xormetric/bblock/src/branch/main/src/listSelect.js)
 
-### 1. Complexité et Couplage
+## 1. Complexité et Couplage
 
 ### Problème :
 Le code mélange plusieurs responsabilités (récupération des données, gestion des interactions utilisateur, et rendu du DOM). Cela complique la maintenance et la réutilisation.
@@ -14,7 +14,7 @@ Le code mélange plusieurs responsabilités (récupération des données, gestio
   - Une autre fonction ou composant pour le rendu.
 
 
-### 2. Dépendances Distantes Non Fiables
+## 2. Dépendances Distantes Non Fiables
 
 ### Problème :
 Les dépendances sont importées directement depuis des URLs (`https://esm.run/`), ce qui peut poser des problèmes de stabilité et de versionnage.
@@ -26,7 +26,7 @@ Les dépendances sont importées directement depuis des URLs (`https://esm.run/`
   ```
 
 
-### 3. Utilisation de `setTimeout` comme Hack
+## 3. Utilisation de `setTimeout` comme Hack
 
 ### Problème :
 Le `setTimeout` utilisé pour initialiser une sélection est peu robuste et repose sur le timing, ce qui peut entraîner des comportements inattendus voir des crash.
@@ -38,7 +38,7 @@ Le `setTimeout` utilisé pour initialiser une sélection est peu robuste et repo
   ```
 
 
-### 4. Absence de Gestion des Erreurs
+## 4. Absence de Gestion des Erreurs
 
 ### Problème :
 Aucune gestion des erreurs n'est prévue pour les appels API ou les exceptions dans le code, ce qui peut entraîner des plantages en cas de problème.
@@ -54,7 +54,7 @@ Aucune gestion des erreurs n'est prévue pour les appels API ou les exceptions d
   ```
 
 
-### 5. Problèmes de Performance
+## 5. Problèmes de Performance
 
 ### Problème :
 La fonction `asyncAppend` rend toutes les données récupérées, ce qui peut poser des problèmes de performance pour de très grandes listes.
